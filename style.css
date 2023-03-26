@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', 'sans-serif';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    height: 450px;
+    width: 600px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 30px hsla(241, 81%, 54%, 10%);
+}
+
+.result {
+    width: 50%;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 25px;
+    color: hsl(241, 100%, 89%);
+}
+
+.result .resultHeading {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 1.1rem;
+}
+
+.result .mainScore {
+    height: 170px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    padding: 20px;
+    margin: auto;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.result .total {
+    font-size: 1rem;
+}
+
+.result .mainScore .score {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.result .score, .heading {
+    color: #fff;
+}
+
+.comment .heading {
+    font-weight: lighter;
+}
+
+.comment .content {
+    font-size: 1rem;
+    margin: 3% 12% 8%;
+}
+
+.summary {
+    height: 100%;
+    width: 50%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.summary h2 {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.summary .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary .category {
+    width: 80%;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+
+.category .title {
+    width: 50%;
+    display: flex;
+}
+
+.category .title .space {
+    width: 20px;
+}
+
+.categories .reaction {
+    background-color: hsla(0, 100%, 67%, 15%);
+}
+
+.reaction .title {
+    color: hsl(0, 100%, 67%, 80%);
+}
+
+.categories .memory {
+    background-color: hsla(39, 100%, 56%, 15%);
+}
+
+.memory .title {
+    color: hsl(39, 100%, 56%);
+}
+
+.categories .verbal {
+    background-color: hsla(166, 100%, 37%, 15%);
+}
+
+.verbal .title {
+    color: hsl(166, 100%, 37%);
+}
+
+.categories .visual {
+    background-color: hsla(234, 85%, 45%, 15%)
+}
+
+.visual .title {
+    color: hsla(234, 85%, 45%);
+}
+
+.category .score span {
+    color: grey;
+}
+
+.summary .continue {
+    width: 80%;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: lighter;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 543px) {
+
+    main {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .result {
+        height: 40%;
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .result .resultHeading {
+        margin-top: 8%;
+        margin-bottom: 5%;
+        font-size: 1.1rem;
+    }
+
+    .result .mainScore {
+        height: 140px;
+        width: 140px;
+    }
+
+    .result .comment .heading {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .result .comment .content {
+        margin-top: 0px;
+        color: hsla(241, 100%, 89%, 80%);
+    }
+
+    .summary {
+        width: 100%;
+    }
+
+    .summary h2 {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        margin-top: 7%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        
+    }
+
+    .summary .category {
+        width: 90%;
+        height: 58px;
+        font-size: 1rem;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 5%;
+    }
+
+    .summary .continue {
+        height: 60px;
+        width: 90%;
+        margin: auto;
+    }
+
+
+}
+
+
+
+
